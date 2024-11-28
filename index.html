@@ -48,6 +48,58 @@
             /* Add your desired margin value */
         }
     }
+
+    .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 30px;
+    }
+
+    .portfolio-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .portfolio-content {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .portfolio-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #333;
+        margin-top: 15px;
+    }
+
+    .portfolio-description {
+        font-size: 1rem;
+        color: #555;
+        margin-top: 10px;
+    }
+
+    .portfolio-link {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #333333;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .portfolio-link:hover {
+        background-color: #0056b3;
+    }
 </style>
 
 <body id="page-top" class="politics_version">
@@ -211,7 +263,8 @@
                             <i class="flaticon-seo"></i>
                         </div>
                         <h2>Backend Developmen</h2>
-                        <p>Design and build tailored backend systems using Python and Django, ensuring scalability, security, and optimal performance.</p>
+                        <p>Design and build tailored backend systems using Python and Django, ensuring scalability,
+                            security, and optimal performance.</p>
                     </div>
                 </div>
                 <!-- end col -->
@@ -221,7 +274,8 @@
                             <i class="flaticon-development"></i>
                         </div>
                         <h2>RESTful API Development</h2>
-                        <p>Create secure and efficient APIs for seamless integration with front-end applications and third-party services.</p>
+                        <p>Create secure and efficient APIs for seamless integration with front-end applications and
+                            third-party services.</p>
                     </div>
                 </div><!-- end col -->
                 <div class="col-md-4">
@@ -230,7 +284,8 @@
                             <i class="flaticon-process"></i>
                         </div>
                         <h2>Database Management</h2>
-                        <p>Efficient integration with relational databases like PostgreSQL and MySQL, optimizing queries and ensuring data integrity.</p>
+                        <p>Efficient integration with relational databases like PostgreSQL and MySQL, optimizing queries
+                            and ensuring data integrity.</p>
                     </div>
                 </div>
                 <!-- end col -->
@@ -240,7 +295,8 @@
                             <i class="flaticon-discuss-issue"></i>
                         </div>
                         <h2>Version Control</h2>
-                        <p>Best practices in Git version control and maintaining clear, comprehensive technical documentation to support ongoing development.</p>
+                        <p>Best practices in Git version control and maintaining clear, comprehensive technical
+                            documentation to support ongoing development.</p>
                     </div>
                 </div><!-- end col -->
                 <div class="col-md-4">
@@ -249,7 +305,9 @@
                             <i class="flaticon-idea"></i>
                         </div>
                         <h2>Web Idea</h2>
-                        <p>I offer Web Idea Consultation as a service to help you refine, shape, and strategize your vision into a clear and actionable plan. Whether you're in the early stages of development or looking to pivot your current project.</p>
+                        <p>I offer Web Idea Consultation as a service to help you refine, shape, and strategize your
+                            vision into a clear and actionable plan. Whether you're in the early stages of development
+                            or looking to pivot your current project.</p>
                     </div>
                 </div><!-- end col -->
                 <div class="col-md-4">
@@ -258,7 +316,8 @@
                             <i class="flaticon-idea-1"></i>
                         </div>
                         <h2>Technical Mentoring & Instruction</h2>
-                        <p>Providing training and mentorship to teams and individuals, helping them develop strong technical skills in backend development.</p>
+                        <p>Providing training and mentorship to teams and individuals, helping them develop strong
+                            technical skills in backend development.</p>
                     </div>
                 </div><!-- end col -->
             </div><!-- end row -->
@@ -269,82 +328,110 @@
         <div class="container">
             <div class="section-title text-left">
                 <h3>Portfolio</h3>
-                <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.
+                <p>Explore my collection of successful projects that demonstrate my expertise in backend development,
+                    web solutions, and system design. Each project reflects my commitment to delivering high-quality,
+                    scalable, and user-focused applications. From custom-built websites to complex web applications, my
+                    portfolio showcases the range of skills and technologies I use to solve real-world problems and
+                    exceed client expectations.
                 </p>
             </div><!-- end title -->
 
-            <div class="gallery-menu row">
-                <div class="col-md-12">
-                    <div class="button-group filter-button-group text-left">
-                        <button class="active" data-filter="*">All</button>
-                        <button data-filter=".gal_a">Web Development</button>
-                        <button data-filter=".gal_b">Creative Design</button>
-                        <button data-filter=".gal_c">Graphic Design</button>
+            <section class="portfolio">
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="uploads/gallery_img-01.jpg" class="img-fluid"
+                            alt=" Manufacturing Innovation">
                     </div>
-                </div>
-            </div>
-
-            <div class="gallery-list row">
-                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
-                    <div class="gallery-single fix">
-                        <img src="uploads/gallery_img-01.jpg" class="img-fluid" alt="Image">
-                        <div class="img-overlay">
-                            <a href="uploads/gallery_img-01.jpg" data-rel="prettyPhoto[gal]"
-                                class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                        </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title"> Manufacturing Innovation</h3>
+                        <p class="portfolio-description">
+                            Engineered efficient backend solutions to drive innovation in the manufacturing industry,
+                            integrating IoT systems to enable real-time data collection, analysis, and automation.
+                        </p>
+                        <a href="uploads/gallery_img-01.jpg" class="portfolio-link" target="_blank">View Full
+                            Project</a>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
-                    <div class="gallery-single fix">
-                        <img src="uploads/gallery_img-02.jpg" class="img-fluid" alt="Image">
-                        <div class="img-overlay">
-                            <a href="uploads/gallery_img-02.jpg" data-rel="prettyPhoto[gal]"
-                                class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                        </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="uploads/gallery_img-02.jpg" class="img-fluid" alt=" Schoolzy">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title"> Schoolzy</h3>
+                        <p class="portfolio-description">
+                            Collaborated with a team to develop the backend for a comprehensive school management
+                            system, enabling seamless communication and efficient administration between schools,
+                            parents, and students.
+                        </p>
+                        <a href="uploads/gallery_img-02.jpg" class="portfolio-link" target="_blank">View Full
+                            Project</a>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
-                    <div class="gallery-single fix">
-                        <img src="uploads/gallery_img-03.jpg" class="img-fluid" alt="Image">
-                        <div class="img-overlay">
-                            <a href="uploads/gallery_img-03.jpg" data-rel="prettyPhoto[gal]"
-                                class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                        </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="uploads/gallery_img-03.jpg" class="img-fluid" alt=" Wimpy Bite">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title"> Wimpy Bite</h3>
+                        <p class="portfolio-description">
+                            Worked with professionals to design and implement the backend for a food ordering app,
+                            ensuring an intuitive and efficient user experience.
+                        </p>
+                        <a href="uploads/gallery_img-03.jpg" class="portfolio-link" target="_blank">View Full
+                            Project</a>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 gallery-grid gal_b gal_a">
-                    <div class="gallery-single fix">
-                        <img src="uploads/gallery_img-04.jpg" class="img-fluid" alt="Image">
-                        <div class="img-overlay">
-                            <a href="uploads/gallery_img-04.jpg" data-rel="prettyPhoto[gal]"
-                                class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                        </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="uploads/gallery_img-04.jpg" class="img-fluid" alt=" Growing Seed">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title"> Growing Seed</h3>
+                        <p class="portfolio-description">
+                            Partnered with experts to engineer the backend of a financial app, empowering users to
+                            manage savings, investments, and financial growth efficiently.
+                        </p>
+                        <a href="uploads/gallery_img-04.jpg" class="portfolio-link" target="_blank">View Full
+                            Project</a>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
-                    <div class="gallery-single fix">
-                        <img src="uploads/gallery_img-05.jpg" class="img-fluid" alt="Image">
-                        <div class="img-overlay">
-                            <a href="uploads/gallery_img-05.jpg" data-rel="prettyPhoto[gal]"
-                                class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                        </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="uploads/gallery_img-05.jpg" class="img-fluid" alt=" Orullo">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title"> Orullo</h3>
+                        <p class="portfolio-description">
+                            Collaborated with a skilled team to build backend infrastructure for a home-service app,
+                            streamlining service bookings, secure payments, and provider connections.
+                        </p>
+                        <a href="uploads/gallery_img-05.jpg" class="portfolio-link" target="_blank">View Full
+                            Project</a>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 gallery-grid gal_c gal_a">
-                    <div class="gallery-single fix">
-                        <img src="uploads/gallery_img-06.jpg" class="img-fluid" alt="Image">
-                        <div class="img-overlay">
-                            <a href="uploads/gallery_img-06.jpg" data-rel="prettyPhoto[gal]"
-                                class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                        </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="uploads/gallery_img-06.jpg" class="img-fluid" alt=" Carrsly Inc.">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title"> Carrsly Inc.</h3>
+                        <p class="portfolio-description">
+                            Designed and developed a user-friendly website for car investments and purchases,
+                            simplifying complex transaction processes while contributing to redefining the automotive
+                            industry with innovative digital solutions.
+                        </p>
+                        <a href="uploads/gallery_img-06.jpg" class="portfolio-link" target="_blank">View Full
+                            Project</a>
                     </div>
                 </div>
-            </div>
+            </section>
+
+
         </div>
     </div>
     </div>
